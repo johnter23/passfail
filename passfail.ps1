@@ -1,4 +1,4 @@
-$Passfail = import-csv /hmswork/passfail.csv
+$Passfail = import-csv /tmp/passfail.csv
 
 foreach($obj in $Passfail)
 {
