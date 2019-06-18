@@ -7,7 +7,7 @@ if($obj.PASSFAIL -eq "Pass")
 Write-Host "Code is Compliant. Continue Pipeline"
 $Token ="https://hooks.slack.com/services/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"
 start-sleep -s 2
-send-slackmessage -Token $Token -Channel 'vector' -Parse full -Text 'Congratulations your code passed VeraCode Security Scan'
+send-slackmessage -Uri $Token -Channel 'vector' -Parse full -Text 'Congratulations your code passed VeraCode Security Scan'
 
 }
 else
